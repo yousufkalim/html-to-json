@@ -1,31 +1,90 @@
-# NPM Module Boilerplate
+# HTML to JSON
 
-**Start developing your NPM module in seconds** ✨
+This library is capable to convert HTML string/element to JSON/JS Object.
 
-Readymade boilerplate setup with all the best practices to kick-start your npm/node module development.
+#### From
+```html
+    <div class="container">
+      <ul>
+          <li>Hello <strong>World</strong></li>
+      </ul>
+    </div>
+```
 
-Happy hacking =)
+#### To
+```json
+    {
+      "type": "div",
+      "attributes": {
+        "class": "container"
+      },
+      "content": [
+        {
+          "type": "ul",
+          "content": [
+            {
+              "type": "li",
+              "content": [
+                "Hello ",
+                {
+                  "type": "strong",
+                  "content": [
+                    "World"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+```
 
-# Features
+## Installation
 
-- **Microbundle** for bundling
-- **ES6/ESNext** - Write _ES6_ code and _Microbundle_ will make bundle of it to ES5 for backwards compatibility
-- **Test** - _Jest_ with _Istanbul_ coverage
-- **Lint** - Preconfigured _ESlint_ with best practices
-- **CI** - _TravisCI_ configuration setup
-- **Minify** - Built code will be minified for performance
+Install html-2-json with npm/yarn
 
-# Commands
+```bash
+  npm install html-2-json // npm
+  yarn add html-2-json // yarn
+```
 
-- `npm run lint` - Run ESlint
-- `npm run build` - Microbundle will transpile ES6 => ES5 and minify the code.
-- `npm run dev` - Microbundle will watch and create build on change.
-- `npm run test` - Run tests with jest.
+## Usage/Examples
 
-# Installation
+#### Import
 
-Just clone this repo and remove `.git` folder.
+```javascript
+import HTMLParser from 'html-2-json'; // ES6
+const HTMLParser = require('html-2-json'); // CommonJS
+```
 
-# License
+#### Data
 
-MIT © Yousuf Kalim
+```javascript
+const element = '<div><ul><li>Hello <strong>World</strong></li></ul></div>'; // HTML string
+const element = document.querySelector('div'); // HTML element
+```
+
+#### Usage
+
+```javascript
+let result = HTMLParser(element, true); // Default: false - true: return JSON, false: return JS Object
+```
+
+## Contributing
+
+- Fork it!
+- Create your feature branch: `git checkout -b my-new-feature`
+- Commit your changes: `git commit -am 'Add some feature'`
+- Push to the branch: `git push origin my-new-feature`
+- Submit a pull request :D
+
+## Author
+
+**html-2-json** © [Yousuf](https://github.com/yousufkalim)  
+Authored and maintained by Yousuf Kalim.
+
+> GitHub [@yousufkalim](https://github.com/yousufkalim) · LinkedIn [@yousufkalim](https://www.linkedin.com/in/yousufkalim/)
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
