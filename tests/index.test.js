@@ -1,12 +1,11 @@
 import { expect, test } from '@jest/globals';
-import defaultAwesomeFunction, { awesomeFunction } from '../src/index.js';
+import HTMLParser from '../src/index.js';
 
-test('Should test default awesome function', () => {
-  const expectedVal = 'I am the Default Awesome Function, fellow comrade! - Yousuf';
-  expect(defaultAwesomeFunction('Yousuf')).toMatch(expectedVal);
-});
+test('Test the parser by converting HTML to JSON', async () => {
+  const element = '<div><ul><li>Hello <strong>World</strong></li></ul></div>';
+  const result = await HTMLParser(element, true);
 
-test('Should test awesome function', () => {
-  const expectedVal = 'I am just an Awesome Function';
-  expect(awesomeFunction()).toMatch(expectedVal);
+  const expected =
+    '{"type":"div","content":[{"type":"ul","content":[{"type":"li","content":["Hello ",{"type":"strong","content":["World"]}]}]}]}';
+  expect(result).toMatch(expected);
 });
