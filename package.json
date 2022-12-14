@@ -1,6 +1,6 @@
 {
   "name": "html-to-json-parser",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "This library converts HTML to JSON tree",
   "type": "module",
   "source": "src/index.js",

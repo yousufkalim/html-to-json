@@ -68,7 +68,7 @@ const element = document.querySelector('div'); // HTML element
 #### Usage
 
 ```javascript
-let result = HTMLParser(element, true); // Default: false - true: return JSON, false: return JS Object
+let result = await HTMLParser(element, true); // Default: false - true: return JSON, false: return JS Object
 ```
 
 ## Contributing
