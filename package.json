@@ -1,7 +1,7 @@
 {
-  "name": "npm-boilerplate",
+  "name": "html-2-json",
   "version": "1.0.0",
-  "description": "This is the boilerplate for the module development of npm",
+  "description": "This library converts HTML to JSON tree",
   "type": "module",
   "source": "src/index.js",
   "exports": {
@@ -20,20 +20,24 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yousufkalim/npm-boilerplate.git"
+    "url": "git+https://github.com/yousufkalim/html-to-json.git"
   },
   "keywords": [
-    "npm",
-    "package",
-    "module",
-    "boilerplate"
+    "html",
+    "json",
+    "tree",
+    "html-to-json",
+    "html2json",
+    "dom",
+    "xmldmom",
+    "htmlparser"
   ],
   "author": "Yousuf Kalim <yousufkalim@outlook.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/yousufkalim/npm-boilerplate/issues"
+    "url": "https://github.com/yousufkalim/html-to-json/issues"
   },
-  "homepage": "https://github.com/yousufkalim/npm-boilerplate#readme",
+  "homepage": "https://github.com/yousufkalim/html-to-json#readme",
   "devDependencies": {
     "@commitlint/cli": "^17.1.2",
     "commitlint-config-non-conventional": "^1.0.1",
