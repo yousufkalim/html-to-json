@@ -42,11 +42,11 @@ This library is capable to convert HTML string/element to JSON/JS Object.
 
 ## Installation
 
-Install html-2-json with npm/yarn
+Install html-to-json-parser with npm/yarn
 
 ```bash
-  npm install html-2-json // npm
-  yarn add html-2-json // yarn
+  npm install html-to-json-parser // npm
+  yarn add html-to-json-parser // yarn
 ```
 
 ## Usage/Examples
@@ -54,8 +54,8 @@ Install html-2-json with npm/yarn
 #### Import
 
 ```javascript
-import HTMLParser from 'html-2-json'; // ES6
-const HTMLParser = require('html-2-json'); // CommonJS
+import HTMLParser from 'html-to-json-parser'; // ES6
+const HTMLParser = require('html-to-json-parser'); // CommonJS
 ```
 
 #### Data
@@ -81,7 +81,7 @@ let result = HTMLParser(element, true); // Default: false - true: return JSON, f
 
 ## Author
 
-**html-2-json** © [Yousuf](https://github.com/yousufkalim)  
+**html-to-json-parser** © [Yousuf](https://github.com/yousufkalim)  
 Authored and maintained by Yousuf Kalim.
 
 > GitHub [@yousufkalim](https://github.com/yousufkalim) · LinkedIn [@yousufkalim](https://www.linkedin.com/in/yousufkalim/)

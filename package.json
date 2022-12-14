@@ -1,5 +1,5 @@
 {
-  "name": "html-2-json",
+  "name": "html-to-json-parser",
   "version": "1.0.0",
   "description": "This library converts HTML to JSON tree",
   "type": "module",
