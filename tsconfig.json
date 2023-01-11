@@ -1,0 +1,35 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "strict": true,
+    "noImplicitOverride": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "stripInternal": true,
+    "esModuleInterop": true,
+    "skipDefaultLibCheck": false,
+    "skipLibCheck": false,
+    "allowSyntheticDefaultImports": true,
+    "experimentalDecorators": true,
+    "isolatedModules": true,
+    "incremental": true,
+    "baseUrl": ".",
+    "forceConsistentCasingInFileNames": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "noEmit": true
+  },
+  "include": ["src/**/*"],
+  "exclude": [
+    "**/node_modules",
+    "src/**/__tests__",
+    "src/**/*.test.ts",
+    "src/**/*.spec.ts",
+    "tests",
+    "dist"
+  ]
+}

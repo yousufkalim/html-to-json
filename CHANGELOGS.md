@@ -14,6 +14,13 @@ All notable changes to this project will be documented in this file.
 > - Internal
 > - Unreleased
 
+## v1.0.2
+
+#### Performance Improvements
+
+- Structural improvements
+- Performance improvements
+
 ## v1.0.1
 
 #### Documentation
