@@ -1,8 +1,14 @@
 # HTML to JSON
 
-This library is capable to convert HTML string/element to JSON/JS Object.
+This library is capable to convert HTML string/element to JSON/JS Object or JSON to HTML.
 
-#### From
+## Features
+
+- Convert HTML to JSON or JavaScript Object
+- Convert JSON or JavaScript Object to HTML
+
+## Example
+**From**
 ```html
     <div class="container">
       <ul>
@@ -11,7 +17,7 @@ This library is capable to convert HTML string/element to JSON/JS Object.
     </div>
 ```
 
-#### To
+**To**
 ```json
     {
       "type": "div",
@@ -51,24 +57,95 @@ Install html-to-json-parser with npm/yarn
 
 ## Usage/Examples
 
-#### Import
+Convert HTML to JSON or JavaScript Object
 
 ```javascript
+// Imports
 import HTMLParser from 'html-to-json-parser'; // ES6
 const HTMLParser = require('html-to-json-parser'); // CommonJS
-```
 
-#### Data
-
-```javascript
+// Data
 const element = '<div><ul><li>Hello <strong>World</strong></li></ul></div>'; // HTML string
 const element = document.querySelector('div'); // HTML element
+
+// Conversion
+let result = await HTMLParser(element, true); // Default: false - true: return JSON, false: return JS Object
 ```
 
-#### Usage
+Convert JSON to HTML using JavaScript
 
 ```javascript
-let result = await HTMLParser(element, true); // Default: false - true: return JSON, false: return JS Object
+// Imports
+import { JSONToHTML } from 'html-to-json-parser'; // ES6
+const { JSONToHTML } = require('html-to-json-parser'); // CommonJS
+
+// Data: JSON or JS Object
+const data = {
+  type: "div",
+  attributes: {
+    class: "container"
+  },
+  content: [
+    {
+      type: "ul",
+      content: [
+        {
+          type: "li",
+          content: [
+            "Hello ",
+            {
+              type: "strong",
+              content: [
+                "World"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+};
+
+// Conversion
+let result = await JSONToHTML(data, false); // Default: true - true: return HTML String, false: return HTML Element
+```
+
+Convert JSON to HTML using TypeScript
+
+```typescript
+// Imports
+import { JSONToHTML, JSONType } from 'html-to-json-parser'; // ES6
+const { JSONToHTML, JSONType } = require('html-to-json-parser'); // CommonJS
+
+// Data: JSON or JS Object
+const data: JSONType = {
+  type: "div",
+  attributes: {
+    class: "container"
+  },
+  content: [
+    {
+      type: "ul",
+      content: [
+        {
+          type: "li",
+          content: [
+            "Hello ",
+            {
+              type: "strong",
+              content: [
+                "World"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+};
+
+// Conversion
+let result = await JSONToHTML(data, false); // Default: true - true: return HTML String, false: return HTML Element
 ```
 
 ## Contributing
