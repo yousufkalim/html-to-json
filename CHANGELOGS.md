@@ -14,6 +14,13 @@ All notable changes to this project will be documented in this file.
 > - Internal
 > - Unreleased
 
+
+## v1.1.0
+
+#### Features
+
+- Feature to convert JSON back to HTML
+
 ## v1.0.2
 
 #### Performance Improvements
