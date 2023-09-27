@@ -10,10 +10,9 @@ import { JSONToHTML } from './json';
 import { JSONContent } from './types';
 
 /**
- * The default export is the `HTMLParser` function.
  * This function converts an HTML element or HTML string into a JSON object or string.
  */
-export default HTMLParser;
+export { HTMLParser };
 
 /**
  * The `JSONToHTML` function converts a JSON object or string into an HTML string or document element.

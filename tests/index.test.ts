@@ -1,5 +1,5 @@
 import { expect, test } from '@jest/globals';
-import HTMLParser, { JSONToHTML } from '../src';
+import { HTMLParser, JSONToHTML } from '../src';
 
 test('Test the parser by converting HTML to JSON', async () => {
   const element = '<div><ul><li>Hello <strong>World</strong></li></ul></div>';
