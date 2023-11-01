@@ -5,14 +5,13 @@
  *
  * @author Yousuf Kalim
  */
-import { HTMLParser } from './html';
+import { HTMLParser as HTMLToJSON } from './html';
 import { JSONToHTML } from './json';
 import { JSONContent } from './types';
 /**
- * The default export is the `HTMLParser` function.
- * This function converts an HTML element or HTML string into a JSON object or string.
+ * The `HTMLToJSON` function converts an HTML element or HTML string into a JSON object or string.
  */
-export default HTMLParser;
+export { HTMLToJSON };
 /**
  * The `JSONToHTML` function converts a JSON object or string into an HTML string or document element.
  */
