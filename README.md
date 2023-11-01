@@ -61,15 +61,15 @@ Convert HTML to JSON or JavaScript Object
 
 ```javascript
 // Imports
-import HTMLParser from 'html-to-json-parser'; // ES6
-const HTMLParser = require('html-to-json-parser'); // CommonJS
+import { HTMLToJSON } from 'html-to-json-parser'; // ES6
+const { HTMLToJSON } = require('html-to-json-parser'); // CommonJS
 
 // Data
 const element = '<div><ul><li>Hello <strong>World</strong></li></ul></div>'; // HTML string
 const element = document.querySelector('div'); // HTML element
 
 // Conversion
-let result = await HTMLParser(element, true); // Default: false - true: return JSON, false: return JS Object
+let result = await HTMLToJSON(element, true); // Default: false - true: return JSON, false: return JS Object
 ```
 
 Convert JSON to HTML using JavaScript

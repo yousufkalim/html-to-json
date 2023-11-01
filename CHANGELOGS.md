@@ -15,6 +15,13 @@ All notable changes to this project will be documented in this file.
 > - Unreleased
 
 
+## v2.0.0
+
+#### Enhancements
+
+- Rename the component `HTMLParser` to `HTMLToJSON`
+- Move `HTMLToJSON` from default export to normal export
+
 ## v1.1.0
 
 #### Features
