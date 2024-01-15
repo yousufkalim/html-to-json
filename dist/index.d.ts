@@ -19,4 +19,4 @@ export { JSONToHTML };
 /**
  * The `JSONType` type is used to define the type of the JSON object used in the library.
  */
-export type JSONType = JSONContent;
+export declare type JSONType = JSONContent;
