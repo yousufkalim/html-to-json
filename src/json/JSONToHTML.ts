@@ -4,6 +4,7 @@
  */
 import { DOMParser } from 'xmldom';
 import { JSONContent } from '../types';
+import { VOID_ELEMENTS } from './const';
 
 /**
  * Converts JSON content to HTML string or HTML Document object
@@ -47,8 +48,11 @@ async function JSONToHTML(
           });
         }
 
-        // End the tag
-        html += `</${content.type}>`;
+        // If it is not an empty element, append the end tag
+        if (!VOID_ELEMENTS.includes(content.type)) {
+          // End the tag
+          html += `</${content.type}>`;
+        }
 
         return html;
       };
