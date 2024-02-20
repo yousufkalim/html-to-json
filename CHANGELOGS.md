@@ -14,6 +14,11 @@ All notable changes to this project will be documented in this file.
 > - Internal
 > - Unreleased
 
+## v2.0.1
+
+#### Dependency Updates
+
+- Update `xmldom` to the latest version `@xmldom/xmldom`
 
 ## v2.0.0
 

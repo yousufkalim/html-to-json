@@ -1,6 +1,6 @@
 {
   "name": "html-to-json-parser",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "This library converts HTML to JSON or JSON to HTML tree",
   "type": "module",
   "source": "src/index.ts",
