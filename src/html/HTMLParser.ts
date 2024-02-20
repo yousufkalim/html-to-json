@@ -2,7 +2,7 @@
  * Convert HTML to JSON
  * @author Yousuf Kalim
  */
-import { DOMParser } from 'xmldom';
+import { DOMParser } from '@xmldom/xmldom';
 import { JSONContent } from '../types';
 
 /**
